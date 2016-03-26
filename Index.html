@@ -10,17 +10,15 @@
 <script src="masonry.js"></script>
 <script src="infinitescroll.js"></script>
 <script type="text/javascript">  //瀑布流
-    $(document).ready(function(){
-        var $container = $('.wall_container1');
-        $container.imagesLoaded(function(){
-            $container.masonry({
-                itemSelector: '.wall',
-                columnWidth: 200,
-                isFitWidth: true,
-                animate: true
-            });
-        });
+$(function(){
+    $('.wall_container1').masonry({
+        itemSelector : '.wall',
+        columnWidth : 200,
+        isAnimated: true,
+        resize: true,
+        fitWidth: true
     });
+});
 </script>
 <script type="text/javascript">  //tab切换
 $(function(){
